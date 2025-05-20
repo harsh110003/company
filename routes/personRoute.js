@@ -66,7 +66,7 @@ router.put('/:id', async(req,res) => {
         }
         catch(err){
             console.log(err)
-            res.status(500).json({error : "Internal servrer error"})
+            res.status(500).json({error : "Internal server error"})
 
 
         }
