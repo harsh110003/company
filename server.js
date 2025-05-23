@@ -6,7 +6,9 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 const Person = require('./models/personSchema')
 const router = require('./routes/personRoute')
+const languagerouter = require('./routes/languageRoute')
 app.use('/person', router)
+app.use('/language', languagerouter)
 require('dotenv').config();
 
 

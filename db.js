@@ -1,9 +1,9 @@
 const mongoose = require('mongoose')
 require('dotenv').config();
 
-//mongourl = 'mongodb://localhost:27017/revise'
+mongourl = 'mongodb://localhost:27017/revise'
 
-mongourl = process.env.MONGO_URL;
+// mongourl = process.env.MONGO_URL;
 
 mongoose.connect(mongourl, {
     useNewURLParser : true,
